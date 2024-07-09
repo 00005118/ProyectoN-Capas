@@ -1,0 +1,20 @@
+spring:
+  sql:
+    init:
+      data:
+  application:
+    name: City_security
+  mustache:
+    suffix: .html
+  datasource:
+    url: jdbc:postgresql://localhost:5050/db_security
+    username: postgres
+    password: capasproyecto
+  jpa:
+    hibernate:
+      ddl-auto: update
+      format_sql: true
+    properties:
+      hibernate:
+        globally_quoted_identifiers: true
+    show-sql: true
